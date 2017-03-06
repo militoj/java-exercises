@@ -8,10 +8,14 @@ import java.util.List;
  */
 public class ArrayStringLister {
     public static void main(String[] args) {
-        List<String> animals = Arrays.asList("pig", "dog", "monkey",
+        List<String> animals = Arrays.asList("horse", "pig", "dog", "monkey",
                 "hippopotamus", "panda");
 
-        System.out.println(animals.get(2).length());
+        for (int i = 0; i < animals.size(); i++) {
+            if (animals.get(i).length() == 5) {
+                System.out.println(animals.get(i));
+            }
+        }
 
     }
 
