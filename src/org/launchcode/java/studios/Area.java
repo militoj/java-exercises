@@ -16,7 +16,7 @@ public class Area {
 
         if (radius < 0){
             System.out.println("Please enter a positive number");
-            System.exit(0)
+            System.exit(0);
 
         }
 
