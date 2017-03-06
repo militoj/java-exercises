@@ -14,9 +14,9 @@ public class Area {
         System.out.print("Enter a radius:");
         float radius = in.nextFloat();
 
-        if (radius < 0){
+        while (radius < 0){
             System.out.println("Please enter a positive number");
-            System.exit(0);
+            radius = in.nextFloat();
 
         }
 
