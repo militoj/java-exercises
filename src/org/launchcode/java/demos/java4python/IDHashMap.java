@@ -1,19 +1,18 @@
 package org.launchcode.java.demos.java4python;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
 /**
  * Created by johnmilito on 3/6/17.
  */
 public class IDHashMap {
-    package org.launchcode.java.demos.java4python;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
 
     /**
      * Created by LaunchCode
      */
-    public class GradebookHashMap {
+
 
         public static void main(String[] args) {
 
@@ -27,7 +26,7 @@ import java.util.Scanner;
             do {
 
                 System.out.print("Student ID: ");
-                NewID = in.nextInteger();
+                NewID = in.nextInt();
 
                 if (!NewID.equals("")) {
                     System.out.print("Student Name: ");
@@ -45,11 +44,8 @@ import java.util.Scanner;
 
             for (Map.Entry<Integer, String> student : students.entrySet()) {
                 System.out.println(student.getKey() + " (" + student.getValue() + ")");
-                sum += student.getValue();
             }
 
 
         }
-
-    }
 }
