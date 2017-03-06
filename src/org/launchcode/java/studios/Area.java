@@ -14,6 +14,12 @@ public class Area {
         System.out.print("Enter a radius:");
         float radius = in.nextFloat();
 
+        if (radius < 0){
+            System.out.println("Please enter a positive number");
+            System.exit(0)
+
+        }
+
         System.out.println("The area of a circle of radius " + radius + " is: " + Math.PI*radius*radius);
     }
 }
