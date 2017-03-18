@@ -39,6 +39,19 @@ public class ClassObjectStudent {
 
         public String getGradeLevel() {
             // Determine the grade level of the student based on numberOfCredits
+            private String gradeLevel = "gradeLevel";
+
+            if (numberOfCredits < 30) {
+                gradeLevel = "Freshman";
+            } else if (numberOfCredits < 60) {
+                gradeLevel = "Sophomore";
+            } else if (numberOfCredits < 90) {
+                gradeLevel = "Junior";
+            } else {
+                gradeLevel = "Senior";
+            }
+
+            return gradeLevel;
         }
 
     /* getters and setters omitted */
