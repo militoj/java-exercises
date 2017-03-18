@@ -32,6 +32,9 @@ public class ClassObjectStudent {
 
         public void addGrade(int courseCredits, double grade) {
             // Update the appropriate fields: numberOfCredits, gpa
+            this.gpa = ((this.gpa * this.numberOfCredits) + grade) / (this.numberOfCredits + courseCredits);
+            this.numberOfCredits += courseCredits;
+
         }
 
         public String getGradeLevel() {
