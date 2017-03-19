@@ -5,7 +5,7 @@ package org.launchcode.java.demos.java4python;
  */
 public class ClassObjectStudent {
 
-    public class Student {
+
 
         private static int nextStudentId = 1;
         private String name;
@@ -13,7 +13,7 @@ public class ClassObjectStudent {
         private int numberOfCredits;
         private double gpa;
 
-        public Student(String name, int studentId,
+        public ClassObjectStudent(String name, int studentId,
                        int numberOfCredits, double gpa) {
             this.name = name;
             this.studentId = studentId;
@@ -21,11 +21,11 @@ public class ClassObjectStudent {
             this.gpa = gpa;
         }
 
-        public Student(String name, int studentId) {
+        public ClassObjectStudent(String name, int studentId) {
             this(name, studentId, 0, 0);
         }
 
-        public Student(String name) {
+        public ClassObjectStudent(String name) {
             this(name, nextStudentId);
             nextStudentId++;
         }
@@ -39,7 +39,7 @@ public class ClassObjectStudent {
 
         public String getGradeLevel() {
             // Determine the grade level of the student based on numberOfCredits
-            private String gradeLevel = "gradeLevel";
+            String gradeLevel = "gradeLevel";
 
             if (this.numberOfCredits < 30) {
                 gradeLevel = "Freshman";
@@ -56,5 +56,5 @@ public class ClassObjectStudent {
 
     /* getters and setters omitted */
 
-    }
+
 }
